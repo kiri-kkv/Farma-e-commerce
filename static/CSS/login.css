@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html{
+min-height:100%;
+}
+body{
+  background-image: url(https://freerangestock.com/sample/125733/plant-growing-on-hands-.jpg);
+  background-size: cover;
+  min-height:100%;
+  background-repeat: no-repeat;
+}
+#login{
+background-color:rgba(255,255,255,0.5);
+padding:10px;
+position:absolute;
+top:50%;
+left:50%;
+padding-bottom:2rem;
+border-radius:10px;
+width:25rem;
+height:15rem;
+transform:translateX(-50%) translateY(-50%);
+}
+h1{
+font-size:50px;
+color: green;
+text-align: center;
+margin-bottom:1%;
+padding-bottom:10px;
+}
+#in1,#in2,#in3{
+display: block;
+margin-left:auto;
+margin-right:auto;
+}
+#in1,#in2{
+background-color:white;
+border:1px solid #ccc;
+box-sizing:border-box;
+padding:5px;
+margin-bottom:8px;
+}
+#in3{
+height:25px;
+width:170px;
+transition:2s;
+background-color: chartreuse;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+#la1,#la2{
+margin-left:27%;
+display: block;
+}
+#login p{
+text-align: center;
+display: block;
+padding-bottom:8px;
+}
+a{
+color:red;
+text-decoration:none;
+cursor:pointer;
+}
+#in3:hover{
+opacity:0.8;
+}
+#error{
+position:relative;
+text-color:red;
+color:red;
+top:30rem;
+left:30rem;
+margin-right:30rem;
+}

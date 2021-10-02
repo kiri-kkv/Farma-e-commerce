@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'CSS/style.CSS' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="nav">
+      <ul class="header">
+        <li class="top__left"><a href="http://localhost:8000/FarmaHome/">Home</a></li>
+        <li class="top__left category">
+          <a href="#">Category</a>
+          <ul class="product__link">
+            <li><a href="http://localhost:8000/FarmaHome/pesticide">pesticide</a></li>
+            <li><a href="http://localhost:8000/FarmaHome/fertilizers">Feltilizers</a></li>
+            <li><a href="http://localhost:8000/FarmaHome/insecticide">Inscecticide</a></li>
+          </ul>
+        </li>
+        <li class="top__left">
+          <a href="http://localhost:8000/FarmaHome/your-orders">Your orders</a>
+        </li>
+        <li class="top__left"><a href="#">Expert advice</a></li>
+        <li class="top__left"><a href="#">About us</a></li>
+        <li class="top__centre">
+          <img src="{% static 'Images/agriculture-economy.png' %}" alt="icon" width="50px" />
+          <p class="site__name">FarmaHome</p>
+        </li>
+        <form class="top__right search" action="">
+          <input
+            type="text"
+            placeholder="Search product"
+            class="search__input"
+          />
+        </form>
+        <li class="top__right search__icon">
+          <img src="{% static 'Images/search.png' %}" alt="icon" width="30px" class="search__pic" />
+        </li>
+        <li class="top__right login"><a href="http://localhost:8000/FarmaHome/userlogin">Login</a></li>
+        <li class="top__right logout"><a href="http://localhost:8000/FarmaHome/userlogin">Logout</a></li>
+      </ul>
+    </nav>
+    <!-- Products showing -->
+    <div class="products_list">
+      <div class="product__row">
+        <div class="row">
+          <div class="image">
+            <img src="{% static 'Images/My-Crop-Veg-5kG-2.jpg' %}" alt="product" />
+            <button class="buy">Buy Now +</button>
+            <button class="add_to_cart">Add to cart 🛒</button>
+          </div>
+          <div class="products__detail">
+            <p class="company">AgrioNio</p>
+            <span class="type">Fertilizer</span>
+            <p class="name">Mycrop</p>
+            <span class="fakeprice"><strike>1000$</strike></span>
+            <span class="price">500$</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="image">
+            <img src="{% static 'Images/My-Crop-Veg-5kG-2.jpg' %}" alt="product" />
+            <button class="buy">Buy Now +</button>
+            <button class="add_to_cart">Add to cart 🛒</button>
+          </div>
+          <div class="products__detail">
+            <p class="company">AgrioNio</p>
+            <span class="type">Fertilizer</span>
+            <p class="name">Mycrop</p>
+            <span class="fakeprice"><strike>1000$</strike></span>
+            <span class="price">500$</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="image">
+            <img src="{% static 'Images/My-Crop-Veg-5kG-2.jpg' %}" alt="product" />
+            <button class="buy">Buy Now +</button>
+            <button class="add_to_cart">Add to cart 🛒</button>
+          </div>
+          <div class="products__detail">
+            <p class="company">AgrioNio</p>
+            <span class="type">Fertilizer</span>
+            <p class="name">Mycrop</p>
+            <span class="fakeprice"><strike>1000$</strike></span>
+            <span class="price">500$</span>
+          </div>
+        </div>
+      </div>
+      <div class="product__row">
+        <div class="row">
+          <div class="image">
+            <img src="{% static 'Images/My-Crop-Veg-5kG-2.jpg' %}" alt="product" />
+            <button class="buy">Buy Now +</button>
+            <button class="add_to_cart">Add to cart 🛒</button>
+          </div>
+          <div class="products__detail">
+            <p class="company">AgrioNio</p>
+            <span class="type">Fertilizer</span>
+            <p class="name">Mycrop</p>
+            <span class="fakeprice"><strike>1000$</strike></span>
+            <span class="price">500$</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="image">
+            <img src="{% static 'Images/My-Crop-Veg-5kG-2.jpg' %}" alt="product" />
+            <button class="buy">Buy Now +</button>
+            <button class="add_to_cart">Add to cart 🛒</button>
+          </div>
+          <div class="products__detail">
+            <p class="company">AgrioNio</p>
+            <span class="type">Fertilizer</span>
+            <p class="name">Mycrop</p>
+            <span class="fakeprice"><strike>1000$</strike></span>
+            <span class="price">500$</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="image">
+            <img src="{% static 'Images/My-Crop-Veg-5kG-2.jpg' %}" alt="product" />
+            <button class="buy">Buy Now +</button>
+            <button class="add_to_cart">Add to cart 🛒</button>
+          </div>
+          <div class="products__detail">
+            <p class="company">AgrioNio</p>
+            <span class="type">Fertilizer</span>
+            <p class="name">Mycrop</p>
+            <span class="fakeprice"><strike>1000$</strike></span>
+            <span class="price">500$</span>
+          </div>
+        </div>
+      </div>
+      <div class="product__row">
+        <div class="row">
+          <div class="image">
+            <img src="{% static 'Images/My-Crop-Veg-5kG-2.jpg' %}" alt="product" />
+            <button class="buy">Buy Now +</button>
+            <button class="add_to_cart">Add to cart 🛒</button>
+          </div>
+          <div class="products__detail">
+            <p class="company">AgrioNio</p>
+            <span class="type">Fertilizer</span>
+            <p class="name">Mycrop</p>
+            <span class="fakeprice"><strike>1000$</strike></span>
+            <span class="price">500$</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="image">
+            <img src="{% static 'Images/My-Crop-Veg-5kG-2.jpg' %}" alt="product" />
+            <button class="buy">Buy Now +</button>
+            <button class="add_to_cart">Add to cart 🛒</button>
+          </div>
+          <div class="products__detail">
+            <p class="company">AgrioNio</p>
+            <span class="type">Fertilizer</span>
+            <p class="name">Mycrop</p>
+            <span class="fakeprice"><strike>1000$</strike></span>
+            <span class="price">500$</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="image">
+            <img src="{% static 'Images/My-Crop-Veg-5kG-2.jpg' %}" alt="product" />
+            <button class="buy">Buy Now +</button>
+            <button class="add_to_cart">Add to cart 🛒</button>
+          </div>
+          <div class="products__detail">
+            <p class="company">AgrioNio</p>
+            <span class="type">Fertilizer</span>
+            <p class="name">Mycrop</p>
+            <span class="fakeprice"><strike>1000$</strike></span>
+            <span class="price">500$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- review section -->
+    <section class="description">
+      <div class="review">
+        <h2 class="not">Not sure yet?</h2>
+        <h1 class="yes">
+          Lakhs of Farmers are already making their lifes simpler.
+        </h1>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+
+        <div class="message">
+          <div class="person person--1">
+            <div class="testimonial">
+              <span class="farmermessage"
+                ><blockquote>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Iusto at, mollitia doloribus nisi et quis explicabo velit
+                  incidunt accusamus consequatur ducimus animi hic laudantium
+                  dolorum atque unde. Debitis itaque blanditiis possimus magnam
+                  sed aut fugiat molestiae libero, architecto tempore quas
+                  ipsum. Enim dolorum eveniet autem ullam. Tempore qui suscipit
+                  nesciunt."
+                </blockquote></span
+              >
+              <div class="farmerdetail">
+                <span><img class="farmaimage" src="{% static 'Images/Farmer1.jpg' %}" alt="Farmer" /></span>
+                <div class="farmerplace">
+                  <span class="farmername">Omkar Pate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------------------------review-section------------------->
+      <p class="reviewquote">Your <button class="reviewbutton">Review</button> will help us grow.</p>
+    </section>
+    <section>
+      <div class="modal hidden">
+          {% csrf_token %}
+        <button class="exit">&times;</button>
+        <div class="reviewer-detail">
+        <img class="review_img" src="{% static 'Images/Farmer3.jpg' %}">
+        <p class="review_name">Name:<span class="rn">Abhiraj Yadav</span></p>
+        </div>
+        <textarea
+            type="text"
+            placeholder="Enetr your review..."
+            class="review_input"
+        ></textarea>
+        <button class="review_submit" onclick="passdata()">Submit</button>
+      </div>
+    </section>
+    <div class="overlay hidden"></div>
+    <!-----------------------last detail ---------------------------->
+    <section class="shop__detail">
+      <h1>FarmaHome home to every farmer in India</h1>
+      <p>To Connect with us</p>
+      <p>📞:+91 8794563790</p>
+      <p>📧:farmaHome989@gmail.com</p>
+    </section>
+    <script>
+      const data=JSON.parse("{{data|escapejs}}");
+      const user_data=JSON.parse("{{data1|escapejs}}");
+      const d=JSON.parse("{{d|escapejs}}");
+    </script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/home.js' %}"></script>
+  </body>
+</html>

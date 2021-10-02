@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+{% load crispy_forms_tags %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    </style>
+</head>
+<body>
+<h1 style="margin:0%;padding-bottom:0px;font-size:50px;color:green">Register Page</h1>
+<form action="http://localhost:8000/FarmaHome/register/" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+{{form|crispy}}
+<input id="button" type="submit" value="Register">
+</form>
+<form action="http://localhost:8000/FarmaHome/userlogin/">
+     <input id="button1" type="submit" value="Login">
+</form>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your orders</title>
+    <link rel="stylesheet" href="{% static 'CSS/style.CSS' %}" />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="nav">
+      <ul class="header">
+        <li class="top__left"><a href="http://localhost:8000/FarmaHome">Home</a></li>
+        <li class="top__left"><a href="#">Expert advice</a></li>
+        <li class="top__left"><a href="#">About us</a></li>
+        <li class="top__centre">
+          <img src="{% static 'Images/agriculture-economy.png' %}" alt="icon" width="50px" />
+          <p class="site__name">FarmaHome</p>
+        </li>
+        <li class="top__right login"><a href="#">Login</a></li>
+        <li class="top__right logout"><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+
+    <p class="customer__name">Your order are here,<span>Jonas.</span></p>
+
+    <div class="products_list">
+      <div class="product__row">
+        <div class="row">
+          <div class="image">
+            <img src="{% static 'Images/My-Crop-Veg-5kG-2.jpg' %}" alt="product" />
+            <button class="buy">Buy Now +</button>
+            <button class="add_to_cart">Add to cart 🛒</button>
+          </div>
+          <div class="products__detail">
+            <p class="company">AgrioNio</p>
+            <span class="type">Fertilizer</span>
+            <p class="name">Mycrop</p>
+            <span class="fakeprice"><strike>1000$</strike></span>
+            <span class="price">500$</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="image">
+            <img src="{% static 'Images/My-Crop-Veg-5kG-2.jpg' %}" alt="product" />
+            <button class="buy">Buy Now +</button>
+            <button class="add_to_cart">Add to cart 🛒</button>
+          </div>
+          <div class="products__detail">
+            <p class="company">AgrioNio</p>
+            <span class="type">Fertilizer</span>
+            <p class="name">Mycrop</p>
+            <span class="fakeprice"><strike>1000$</strike></span>
+            <span class="price">500$</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="image">
+            <img src="{% static 'Images/My-Crop-Veg-5kG-2.jpg' %}" alt="product" />
+            <button class="buy">Buy Now +</button>
+            <button class="add_to_cart">Add to cart 🛒</button>
+          </div>
+          <div class="products__detail">
+            <p class="company">AgrioNio</p>
+            <span class="type">Fertilizer</span>
+            <p class="name">Mycrop</p>
+            <span class="fakeprice"><strike>1000$</strike></span>
+            <span class="price">500$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="shop__detail">
+      <h1>FarmaHome home to every farmer in India</h1>
+      <p>To Connect with us</p>
+      <p>📞:+91 8794563790</p>
+      <p>📧:farmaHome989@gmail.com</p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'CSS/login.CSS' %}">
+</head>
+<body>
+<div id="login">
+<form  method="post" action="http://localhost:8000/FarmaHome/userlogin/">
+    <h1>Login Page</h1>
+    {% csrf_token %}
+    <p>Dont have an account?<a href="http://localhost:8000/FarmaHome/register/">Register</a></p>
+    <label id="la1" for="username">Username</label>
+    <input id="in1" type="text" name="username" value="">
+    <label id="la2" for="password">Password</label>
+    <input id="in2" type="password" name="password" value="">
+    <br>
+    <input id="in3" value="login" type="submit">
+</form>
+</div>
+<p id="error">{{error}}</p>
+<script>
+    document.getElementById("in1").value="";
+    document.getElementById("in2").value="";
+</script>
+</body>
+</html>

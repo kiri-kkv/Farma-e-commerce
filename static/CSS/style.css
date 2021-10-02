@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: #f3f3f3;
+  box-sizing: border-box;
+  height: 100%;
+}
+/* Nav bar */
+.nav {
+  padding: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+ul {
+  list-style: none;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 17px;
+  height: 70px;
+}
+.top__left {
+  margin-left: 0px;
+  padding: 8px;
+}
+.top__centre {
+  margin-left: 7%;
+}
+.top__right {
+  padding: 8px;
+}
+.search {
+  margin-left: 3%;
+  padding-left: 10px;
+  padding-right: 0px;
+  transition: all 2s;
+  align-self: center;
+  padding-bottom: 0px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: green;
+}
+.site__name {
+  display: inline;
+  font-size: 40px;
+  color: lightgreen;
+  position: relative;
+}
+.top__centre img {
+  border-radius: 50%;
+  margin-left: 5px;
+  top: 80px;
+}
+.search input {
+  padding: 5px;
+  display: none;
+}
+.search__icon {
+  padding-left: 1px;
+}
+.search__pic {
+  width: 22px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.category li {
+  padding: 5px;
+}
+.category:hover .product__link {
+  display: block;
+}
+.product__link {
+  border-radius: 7px;
+  position: fixed;
+  display: none;
+  background-color: mintcream;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+/*------------- Products list--------------------- */
+.products_list {
+  position: relative;
+  display: grid;
+  max-width: 100rem;
+  margin: 0% auto;
+  gap: 0.5rem;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  margin-left: 5.6rem;
+  margin-right: 5.6rem;
+  overflow: scroll;
+  border-bottom: 1px solid silver;
+  height: 55rem;
+}
+.product__row {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 0.8rem;
+}
+.row {
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
+  height: 25rem;
+  width: 20rem;
+  background-color: white;
+}
+.row:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.image img {
+  width: 15rem;
+  height: 13rem;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+.image {
+  padding-top: 30px;
+  height: 17rem;
+  cursor: pointer;
+}
+.products__detail {
+  background-color: #f0f0f0;
+  margin: 0;
+  height: 8rem;
+  padding: 7px;
+  position: relative;
+}
+.image button {
+  position: relative;
+  left: 70px;
+  height: 25px;
+  width: 90px;
+  border: 0;
+  cursor: pointer;
+  display: none;
+  transition: all 3s;
+}
+.buy {
+  color: white;
+  background-color: black;
+}
+.add_to_cart {
+  color: black;
+  background-color: honeydew;
+  margin-left: 0;
+}
+.image:hover .buy,
+.image:hover .add_to_cart {
+  display: inline-block;
+}
+.company {
+  color: darkgray;
+  display: inline;
+}
+.name {
+  position: relative;
+  color: greenyellow;
+  font-size: 22px;
+  top: 15px;
+}
+.fakeprice,
+.price {
+  position: relative;
+  top: 20px;
+}
+.price {
+  color: green;
+}
+.type {
+  position: relative;
+  float:right;
+  font-size: 18px;
+}
+/* review section */
+.description {
+  margin-top: 10px;
+  height: 28rem;
+  /* background-image: linear-gradient(to bottom right, lightgreen, green); */
+}
+.message {
+  max-width: 37rem;
+  height: 17rem;
+  margin: 0 auto;
+  position: relative;
+
+  /* IN THE END */
+  overflow: hidden;
+}
+.person {
+  position: absolute;
+  width: 100%;
+  height: 17rem;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+.testimonial {
+  width: 100%;
+  position: relative;
+}
+.not,
+.yes {
+  position: relative;
+  top: 2rem;
+  margin-left: 3rem;
+}
+.not {
+  font-size: 3rem;
+  color: green;
+}
+.review_img,.farmerdetail img {
+  width: 80px;
+  height: 70px;
+  border-radius: 50%;
+}
+.farmermessage {
+  font-size: 17px;
+  font-style: italic;
+}
+.farmerdetail {
+  display: grid;
+  grid-template-columns: 85px 4fr;
+  gap: 5px;
+  position: relative;
+  top: 30px;
+}
+.farmerplace {
+  color: green;
+  position: relative;
+  top: 30px;
+}
+.slider__btn {
+  position: relative;
+  top: 10rem;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  color: #333;
+  width: 3rem;
+  height: 3rem;
+  font-size: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+.slider__btn--right {
+  left: 71.2%;
+}
+.slider__btn--left {
+  left: 20.5%;
+}
+/* last--details */
+.shop__detail {
+  max-width: 100%;
+  padding: 20px;
+  height: 10rem;
+  /* background-image: linear-gradient(to right, lightgreen, green); */
+  background-color: #37383d;
+  margin-top: 10px;
+}
+.shop__detail h1 {
+  color: white;
+  font-size: 30px;
+}
+/* Yours order customer name */
+.customer__name {
+  font-size: 30px;
+  position: relative;
+  left: 10px;
+  color: darkgrey;
+  padding: 7px;
+}
+/*******************review-section***********************/
+.reviewquote{
+float:right;
+}
+.reviewbutton{
+border:none;
+cursor:pointer;
+color:darkgreen;
+font-size:20px;
+}
+.modal{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #f3f3f3;
+box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+z-index: 1000;
+transition: all 0.5s;
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+height:17rem;
+width:26rem;
+border-radius:20px;
+}
+.review_img{
+position:relative;
+top:7px;
+left:10px;
+display:inline;
+}
+.review_name{
+display:inline;
+}
+.review_submit{
+justify-content:center;
+height:2rem;
+width:5rem;
+position:relative;
+bottom:5px;
+left:12rem;
+background-color:lightgreen;
+border:none;
+cursor:pointer;
+}
+.review_input{
+position:relative;
+display:block;
+height:7rem;
+width:20rem;
+left:2rem;
+}
+.overlay{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(4px);
+z-index: 100;
+transition: all 0.5s;
+}
+.exit{
+position:relative;
+border:none;
+width:20px;
+height:10px;
+left:24rem;
+cursor:pointer;
+font-size:25px;
+}
+.hidden{
+visibility:hidden;
+}
