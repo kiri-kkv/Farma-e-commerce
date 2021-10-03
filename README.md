@@ -22,5 +22,5 @@ E-commerece website to get products related to agriculture.
 ![Screenshot (585)](https://user-images.githubusercontent.com/91778893/135768266-9b677dc4-9dc5-4909-9abf-d8342408f811.png)
 ![Screenshot (587)](https://user-images.githubusercontent.com/91778893/135768272-104f5651-440d-4ca1-95ce-077206b0779e.png)
 
-4)To write feedback
+4)To write feedback(Showing name and image of current user that is logged in)
 ![Screenshot (590)](https://user-images.githubusercontent.com/91778893/135768276-4f5988b6-6951-4c28-9caf-ad887e4c7b69.png)
